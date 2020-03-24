@@ -703,6 +703,15 @@
                 slider.scrollLeft = scrollLeft - walk;
             });
 
+            const courseSlider = $('.coursesSection--slider');
+            courseSlider.each(function(eSlider){
+                
+                if($(this).find('.courseCard').length > 4){
+                    $(this).addClass('scrollableCourses');
+                }
+
+            })
+
         }
         coursesSlide();
     </script>

@@ -8928,11 +8928,11 @@ footer .smallText a:hover {
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.coursesSection .coursesSection--slider::after {
+.coursesSection .coursesSection--slider.scrollableCourses::after {
   content: '';
   background: linear-gradient(to right, transparent 95%, #fff 100%);
   width: 100%;
-  margin-left: -104%;
+  margin-left: -102%;
   flex-shrink: 0;
   position: sticky;
   right: 0;
