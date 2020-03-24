@@ -1,0 +1,32 @@
+.articlePagination{
+    margin-top: 60px;
+    a.button{
+        border-radius: 2px;
+        @media screen and (max-width: 400px){
+            padding: 8px 15px;
+        }
+    }
+    a:first-child{
+        margin-right: 8px;
+        @media screen and (max-width: 991px){
+            margin-right: 0;
+            margin-bottom: 9px;
+        }
+    }
+    a.backButton svg {
+        margin-right: 34px;
+        @media screen and (max-width: 400px){
+            margin-right: 15px;
+        }
+    }
+    a.nextButton svg {
+        margin-left: 34px;
+        @media screen and (max-width: 400px){
+            margin-left: 15px;
+        }
+    }
+    a.button.button-disabled{
+        background-color: $grey-40;
+        pointer-events: none;
+    }
+}

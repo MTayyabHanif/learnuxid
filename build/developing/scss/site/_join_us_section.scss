@@ -1,0 +1,29 @@
+.joinUs{
+    background-color: $grey-20;
+    position: relative;
+    z-index: 6;
+    padding: 20px 0;
+    margin-top: 77px;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        left: -3000px;
+        right: -3000px;
+        background-color: $grey-20;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        width: auto !important;
+    }
+    .joinUs--title{
+        color: $grey-100;
+        @include fontsize(44px);
+        @include lineheight(44px, 54px);
+        font-family: $heading;
+        span{
+            color: $navy-70;
+            background: linear-gradient($turquoise-20, $turquoise-20) center/100% 35px no-repeat;
+        }
+    }
+}

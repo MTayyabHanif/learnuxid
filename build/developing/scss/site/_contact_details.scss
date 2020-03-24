@@ -1,0 +1,23 @@
+.contactDetails{
+    background-color: #feefd5;
+    padding: 99px 0;
+    @media screen and (max-width: 991px) {
+        padding: 79px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 43px 0;
+    }
+    .contactDetails--title {
+        position: relative;
+        top: -33px;
+        @media screen and (max-width: 991px) {
+            top: 0;
+        }
+    }
+    .contactDetails--item{
+        p > a{
+            text-decoration: none;
+            color: $grey-100;
+        }
+    }
+}

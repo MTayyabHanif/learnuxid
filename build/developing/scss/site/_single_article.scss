@@ -1,0 +1,203 @@
+.singleArticle{
+    margin-bottom: 108px;
+    .article .articleCard{
+        .article--title{
+            @include fontsize(44px);
+            @include lineheight(44px, 54px);
+            @media screen and (max-width: 767px) {
+                @include fontsize(34px);
+                @include lineheight(34px, 44px);
+            }
+        }
+        p{
+            color: $grey-50;
+            @include fontsize(21px);
+            @include lineheight(21px, 30px);
+            letter-spacing: 0.11px;
+            margin-top: 24px;
+            @media screen and (max-width: 767px){
+                @include fontsize(18px);
+                @include lineheight(18px, 27px);
+            }
+        }
+        .article--tags a{
+            border-radius: 4px;
+            background-color: $grey-50;
+            font-size: 16px;
+            @include lineheight(16px, 30px);
+            letter-spacing: 0.08px;
+            text-transform: capitalize;
+            font-family: $base-font;
+            font-weight: normal;
+            padding: 8px 12px;
+            &:hover,
+            &:focus{
+                background-color: #16578a;
+            }
+        }
+        .article--topDescription{
+            @include fontsize(25px);
+            @include lineheight(25px, 34px);
+            color: #224561;
+            margin-top: 54px;
+            @media screen and (max-width: 767px){
+                @include fontsize(20px);
+                @include lineheight(20px, 30px);
+            }
+        }
+        .article--subtitle{
+            @include fontsize(38px);
+            @include lineheight(38px, 40px);
+            font-family: $heading;
+            color: #455f72;
+            margin-top: 39px;
+        }
+        .pull-row-left,
+        .pull-row-right{
+            margin-top: 51px;
+        }
+        .pull-row-left p{
+            @media screen and (max-width: 767px) {
+                margin-top: 18px;
+            }
+        }
+        .pull-row-right .article--link{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 18px;
+            }
+        }
+        .article--subtitle~.row{
+            margin-top: 30px;
+            @media screen and (max-width: 767px) {
+                margin-top: 18px;
+            }
+            p{
+                margin-top: 0;
+            }
+        }
+        .quote{
+            background-color: #e5f5ef;
+            @media screen and (max-width: 767px) {
+                margin-top: 18px;
+            }
+        }
+        ul{
+            margin-top: 15px;
+        }
+        ul li {
+            position: relative;
+            margin-bottom: 3px;
+            p{
+                margin-top: 0;
+            }
+        }
+        ul li::before {
+            content: '';
+            width: 11px;
+            height: 11px;
+            background-color: $turquoise-40;
+            position: absolute;
+            top: 9px;
+            border-radius: 50%;
+            left: -24px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .article--link span,
+        .article--video a.article--video-downloadbtn{
+            @include fontsize(16px);
+            @include lineheight(16px, 64px);
+            color: $navy-50;
+            font-family: $draftc-bold;
+            border-bottom: 8px solid $peach-40;
+        }
+        .blockquote{
+            background-color: $peach-10;
+            padding: 25px;
+        }
+        .blockquote--text{
+            @include fontsize(25px);
+            @include lineheight(25px, 34px);
+            color: $navy-20;
+            position: relative;
+        }
+        .blockquote--text::before{
+            content: '';
+            background-image: url('../../img/svg/quote-green.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 110px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            mix-blend-mode: multiply;
+        }
+        .article--summary{
+            @include fontsize(25px);
+            @include lineheight(25px, 34px);
+            color: $grey-50;
+            position: relative;
+            margin-top: 57px;
+        }
+        .article--summary::after {
+            content: '';
+            background-color: $torquoise-00;
+            width: 400px;
+            height: 80%;
+            position: absolute;
+            bottom: 0;
+            right: -30px;
+            mix-blend-mode: multiply;
+        }
+        .article--summary span{
+            font-family: $draftc-bold;
+        }
+        .article--video{
+            margin-top: 54px;
+        }
+        .article--video a.article--video-downloadbtn{
+            border-color: $turquoise-40;
+            line-height: 0;
+        }
+        .sectionTitle{
+            margin-bottom: 36px;
+        }
+        form .form-item:not(:last-child){
+            margin-bottom: 27px;
+        }
+        form .form-item:last-child{
+            margin-bottom: 36px;
+        }
+    }
+    .articlePagination{
+        display: flex;
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+        a{
+            line-height: 0;
+            min-height: 60px;
+            flex-basis: 100%;
+            font-size: 16px;
+            font-family: $draftc;
+            font-weight: normal;
+            text-transform: capitalize;
+            padding: 0 20px;
+        }
+        a > div {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        a.backButton > div{
+            text-align: left;
+            justify-content: flex-start;
+        }
+        a.nextButton > div{
+            text-align: right;
+            justify-content: flex-end;
+        }
+    }
+}

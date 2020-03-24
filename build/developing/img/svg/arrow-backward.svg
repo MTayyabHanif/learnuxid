@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.001" height="19.41" viewBox="0 0 32.001 19.41">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path d="M0 0H32.001V19.41H0z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__arrow-backward" transform="rotate(180 346 1317.419)">
+        <g id="prefix__iconArrow" transform="translate(660 2615.428)">
+            <path id="prefix__Path_1" d="M31.71 15.29l-9-9-1.42 1.42 7.3 7.29H0v2h28.59l-7.29 7.29 1.41 1.41 9-9a1 1 0 000-1.41z" data-name="Path 1" transform="translate(0 -6.29)" style="fill:#97a3ac"/>
+        </g>
+    </g>
+</svg>

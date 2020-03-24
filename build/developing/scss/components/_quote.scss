@@ -1,0 +1,16 @@
+.quote{
+    background-color: #ffefd3;
+    position: relative;
+    margin-left: 15px;
+    padding: 3px 9px;
+    &::before {
+        content: '';
+        background: $navy-00;
+        width: 8px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -15px;
+    }
+}

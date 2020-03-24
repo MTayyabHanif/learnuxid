@@ -1,0 +1,16 @@
+.contactSection{
+    > .container > .row > div > .row{
+        @media screen and (max-width: 991px){
+            justify-content: center;
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 500px;
+        border-radius: 2px;
+        box-shadow: 0 12px 27px 0 rgba(0, 0, 0, 0.2);
+    }
+    form .button:hover{
+        background-color: #112a3f;
+    }
+}

@@ -1,0 +1,107 @@
+.coursesSection{
+    .coursesSection--slider {
+        display: flex;
+        overflow: auto;
+        scrollbar-width: thin;
+        position: relative;
+        @media screen and (max-width: 450px){
+            padding: 0 15px;
+        }
+        &::-webkit-scrollbar {
+            width: 5px;
+            height: 7px;
+            &::after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #cdcdcd;
+            outline: 1px solid #f0f0f0;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        }
+        &::after{
+            content: '';
+            background: linear-gradient(to right, transparent 95%, $white 100%);
+            width: 100%;
+            margin-left:-5%; /* same as width to create the overlap*/
+            flex-shrink:0; /* to disable shrink effect */
+            position: sticky;
+            right: 0;
+        }                                 
+        .courseCard {
+            flex: 0 0 auto;
+            margin-right: 64px;
+            @media screen and (max-width: 450px){
+                flex: 0 0 100%;
+            }
+        }
+    }
+    .buythis{
+        .orText{
+            font-size: 38px;
+            color: $grey-90;
+            font-family: $heading;
+            position: relative;
+            max-width: 140px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .orText::before,
+        .orText::after{
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: $grey-90;
+            position: absolute;
+            top: 54%;
+        }
+        .orText::before {
+            left: 0;
+        }
+        .orText::after {
+            right: 0;
+        }
+        .takeFirst{
+            font-size: 16px;
+            letter-spacing: 0.88px;
+            color: $navy-50;
+            font-family: $draftc-bold;
+            text-decoration: none;
+        }
+        .takeFirst span {
+            border-bottom: 8px solid #b3e6ff;
+            transition: border-bottom .2s ease-in-out;
+            &:hover{
+                border-color: #75b7d8;
+            }
+        }
+        .button{
+            @media screen and (max-width: 450px){
+                padding: 7px 18px;
+                margin: 0 15px;
+            }
+        }
+    }
+    &.uxCourses .buythis .button,
+    &.vdCourses .buythis .button{
+        color: $navy-70 !important;
+    }
+    &.uxCourses .buythis .button{
+        background-color: #50f2b7;
+        &:hover{
+            background-color: #24e7a0;
+        }
+    }
+    &.vdCourses .buythis .button{
+        background-color: $peach-40;
+        &:hover{
+            background-color: $peach40-dark;
+        }
+    }
+}

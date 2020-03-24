@@ -1,0 +1,76 @@
+.feedbackSection{
+    margin: 103px 0;
+    .sectionTitle{
+        margin-bottom: 73px;
+    }
+    .studentFeedback{
+        vertical-align: top;
+        margin-bottom: 58px;
+        .studentFeedback--description{
+            position: relative;
+            max-width: 515px;
+            margin-left: 0;
+            min-height: 134px;
+            &::before {
+                content: '';
+                background-image: url('../img/svg/quote-green.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 110px;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                z-index: -1;
+                @media screen and (max-width: 767px) {
+                    height: 75px;
+                }
+            }
+        }
+    }
+    .studentFeedback .studentFeedback--studentDetails{
+        align-items: center;
+        .studentFeedback--details{
+            margin-left: 15px;
+        }
+        .studentFeedback--name,
+        .studentFeedback--profession{
+            @include fontsize(21px);
+            @include lineheight(21px, 22px);
+            color: $grey-90;
+        }
+        .studentFeedback--name{
+            font-family: DraftC-Bold;
+        }
+        .studentFeedback-avatar img {
+            max-width: 81px;
+            border-radius: 50%;
+            border: 2px solid #d0d8e4;
+        }
+    }
+    .feedbackSection-sliderControls {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        svg path{
+            fill: $metallic-blue;
+        }
+        .feedbackSection-sliderControls-arrow{
+            cursor: pointer;
+        }
+        .sliderReviews .sliderReviews--numbers{
+            @include fontsize(38px);
+            color: $grey-50;
+            font-family: $heading;
+        }
+        .sliderReviews .sliderReviews--title{
+            font-size: 14px;
+            @include lineheight(14px, 28px);
+            letter-spacing: 2.1px;
+            color: $grey-40;
+        }
+    }
+}

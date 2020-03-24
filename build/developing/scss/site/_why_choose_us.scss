@@ -1,0 +1,82 @@
+.chooseUs{
+    background-color: #1f374d;
+    height: 835px;
+    position: relative;
+    @media screen and (max-width: 991px) {
+        height: 1030px;
+    }
+    // @media screen and (max-width: 575px) {
+    //     height: 917.8px;
+    // }
+    .chooseUs-wrap{
+        padding: 66px 0 0 0;
+    }
+    .chooseUs--title {
+        max-width: 310px;
+        color: $grey-00;
+        @media screen and (max-width: 991px){
+            max-width: 270px;
+            margin-top: 6px;
+            @include fontsize(50px);
+            @include lineheight(50px, 54px);
+        }
+        @media screen and (max-width: 575px){
+            max-width: 205px;
+            margin-top: 0;
+            @include fontsize(38px);
+            @include lineheight(38px, 40px);
+        }
+    }
+    .chooseUs--description {
+        max-width: 520px;
+        p {
+            color: $pale-grey-three;
+            @media screen and (max-width: 575px){
+                @include fontsize(16px);
+                @include lineheight(16px, 22px);
+                letter-spacing: 0.08px;
+            }
+        }
+    }
+    .chooseUs--img {
+        // margin-top: 79px;
+        position: absolute;
+        bottom: 0;
+        img{
+            max-width: 395px;
+            width: 100%;
+        }
+    }
+    .chooseSection--badge{
+        margin-bottom: 134px;
+        @media screen and (max-width: 991px){
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        @media screen and (max-width: 575px){
+            display: block;
+        }
+        .chooseSection--badge-content{
+            margin-left: 12px;
+            @media screen and (max-width: 575px){
+                margin-left: 0;
+            }
+        }
+        .chooseSection--badge-icon img {
+            @media screen and (max-width: 575px){
+                max-width: 25px;
+                width: 100%;
+            }
+        }
+        .chooseUs--badge-title{
+            @include fontsize(38px);
+            @include lineheight(38px, 40px);
+            font-family: $heading;
+            color: $turquoise-30;
+            @media screen and (max-width: 575px){
+                @include fontsize(28px);
+                @include lineheight(28px, 36px);
+            }
+        }
+    }
+}

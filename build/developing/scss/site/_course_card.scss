@@ -1,0 +1,56 @@
+.courseCard {
+    &:first-child{
+        margin-left: calc(10% - 10px);
+        @media screen and (max-width: 450px) {
+            margin-left: 0;
+        }
+    }
+    .card {
+        background-color: #fafcfb;
+        border-radius: 8px;
+        box-shadow: 0 12px 27px 0 rgba(0, 0, 0, 0.2);
+        max-width: 337px;
+        width: 100%;
+    }
+    .card .card-body {
+        padding: 12px 14px 34px;
+        .card-title a{
+            @include fontsize(19px);
+            @include lineheight(19px, 23px);
+            color: $navy-70;
+            font-family: $draftc-bold;
+            text-decoration: none;
+        }
+        .card-description,
+        .courseCard--reviewTitle{
+            @include fontsize(16px);
+            @include lineheight(16px, 22px);
+        }
+        .courseCard--reviewTitle{
+            color: $brown;
+            font-family: $draftc-bold;
+        }
+        .card-description{
+            letter-spacing: 0.08px;
+            color: $grey-50;
+        }
+        .courseCard--reviews{
+            display: flex;
+            justify-content: space-between;
+        }
+        .courseCard--reviewStars-images{
+            display: flex;
+        }
+        .courseCard--reviewStars-images > img:not(:last-child) {
+            margin-right: 2px;
+        }
+    }
+    .joinStudents{
+        @include fontsize(16px);
+        @include lineheight(16px, 22px);
+        color: $navy-30;
+        font-family: $draftc-bold;
+        margin-bottom: 9px;
+        margin-top: 9px;
+    }
+}

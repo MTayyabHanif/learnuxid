@@ -1,0 +1,119 @@
+.navbar{
+    margin: 0 auto;
+    padding: 18px 36px;
+    @media screen and (max-width: 991px){
+        padding: 20px 27px;
+    }
+    @media screen and (max-width: 767px){
+        padding: 16px 23px;
+    }
+    .navbar--logo img{
+        width: 137.9px;
+        height: 38px;
+        object-fit: contain;
+    }
+    .button-toggle{
+        @media screen and (min-width: 768px){
+            display: none;
+        }
+        background: transparent;
+        border: 0;
+        outline: none;
+        line-height: 0;
+        padding: 0;
+        i{
+            font-size: 25px;
+            color: $navy-00;
+        }
+    }
+    .navbar-collapse ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media screen and (max-width: 767px){
+            display: block;
+        }
+        li:not(:last-child) {
+            margin-right: 0;
+            @media screen and (min-width: 992px){
+                margin-right: 51px;
+            }
+            @media screen and (min-width: 768px){
+                margin-right: 33px;
+            }
+        }
+        li{
+            @media screen and (max-width: 767px){
+                padding: 10px;
+                border-bottom: 1px solid #e2dfdf;
+            }
+        }
+        li a {
+            font-size: 16px;
+            @include lineheight(16px, 23px);
+            color: $grey-100;
+            text-decoration: none;
+            @media screen and (max-width: 767px){
+                color: #000;
+                font-weight: bold;
+            }
+        }
+        li a:hover,
+        li a:focus,
+        li a.active {
+            color: $blue-20;
+            @media screen and (max-width: 767px){
+                color: #000;
+            }
+        }
+    }
+    .navbar-collapse .nav--textMob {
+        display: none;
+        span {
+            font-size: 16px;
+        }
+        .button-toggle.in {
+            background-color: transparent;
+            border-radius: 0;
+            padding: 0;
+            i {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 767px){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 10px;
+            background-color: $navy-40;
+        }
+    }
+    @media screen and (max-width: 767px){
+        .navbar-collapse{
+            position: fixed;
+            right: -300px;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background-color: $white;
+            z-index: 999;
+            transition: right .3s ease-in-out;
+        }
+        .button-toggle:not(.in) .ti-close::after {
+            content: '';
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        .navbar-collapse.show{
+            right: 0;
+        }
+    }
+}

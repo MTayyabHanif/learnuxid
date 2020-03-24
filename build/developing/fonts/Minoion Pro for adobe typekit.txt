@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://use.typekit.net/yme7xyw.css">
+
+OR----
+
+<style>
+  @import url("https://use.typekit.net/yme7xyw.css");
+</style>
+
+USAGE----
+
+font-family: minion-pro, serif;
+
+font-weight: 700;
+
+font-style: normal;

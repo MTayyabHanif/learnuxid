@@ -1,0 +1,89 @@
+/*
+
+Buttons
+
+Buttons and their variations
+
+Markup:
+<button class="button {{modifier_class}}">Button</a>
+<a href="#" class="button {{modifier_class}}">Button</a>
+
+.button       - A link that's sized like a button
+
+*/
+
+
+.button {
+	background-color: $primary;
+	font-size: 16px;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    font-family: $draftc-bold;
+    font-weight: bold;
+    padding: 15px 33px;
+    border-radius: 32px;
+    box-shadow: none;
+	box-sizing: border-box;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	max-width: 100%;
+	transition: all 200ms ease-in-out;
+	text-align: center;
+	user-select: none;
+	width: auto;
+	text-decoration: none;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	@media screen and (max-width: 767px){
+		padding: 7px 30px;
+		font-size: 14px;
+	}
+	&.navy{
+		background-color: $navy-40;
+		&:hover{
+			background-color: $navy40-dark;
+		}
+	}
+
+	i, .icon {
+		position: relative;
+		top: 1px;
+		margin: 0 6px;
+	}
+	&:link,
+	&:visited,
+	&:hover,
+	&:focus{
+		color: $white !important;
+		text-decoration: none;
+	}
+	&:hover{
+		background-color: $primary-dark;
+	}
+
+	// &:focus,
+	// &:hover {
+	// 	background-color: #3FE8C8;
+	// 	box-shadow: 0 6px 12px rgba(#302C2A, 90%);
+	// 	color: $black;
+	// }
+
+	// &:focus{
+	// 	outline: .1rem dotted $color-midgray;
+	// }
+	// &:active{
+	// 	background-color: $primary;
+	// }
+	// &.small, &.large, &.huge{
+	// 	line-height: 220%;
+	// }
+	// &.uppercase{
+	// 	font-size: .95rem;
+	// }
+}
+[type=button],
+[type=submit],
+button{
+	@extend .button;
+}

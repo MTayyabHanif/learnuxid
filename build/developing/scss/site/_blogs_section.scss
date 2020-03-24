@@ -1,0 +1,82 @@
+.blogsSection{
+    .article{
+        margin-bottom: 51px;
+    }
+    .article{
+        position: relative;
+        .article--featured,
+        .article--video{
+            font-size: 16px;
+            line-height: 1;
+            color: $grey-100;
+            font-family: $draftc-bold;
+            letter-spacing: 0.88px;
+            background-color: #e7f1f9;
+            padding: 5px 16px;
+            border-radius: 40px;
+            min-width: 93px;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            left: -156px;
+            top: 34px;
+            @media screen and (max-width: 991px){
+                position: unset;
+                min-width: unset;
+                max-width: 93px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .article .articleCard{
+        .article--title{
+            @include fontsize(44px);
+            @include lineheight(44px, 54px);
+        }
+        .article--title a{
+            color: $grey-100;
+            text-decoration: none;
+            &:hover{
+                color: $blue20-dark;
+            }
+        }
+        .article--description{
+            color: $grey-50;
+            margin: 8px 0 -8px;
+        }
+        .article--readmore{
+            @include fontsize(16px);
+            @include lineheight(16px, 64px);
+            color: $navy-50;
+            font-family: $draftc-bold;
+            text-decoration: none;
+            border-bottom: 8px solid $peach-40;
+            transition: border-bottom .2s ease-in-out;
+            &:hover{
+                border-color: $peach40-dark;
+            }
+        }
+        &.featuredArticle .article--readmore{
+            border-color: $blue-20;
+            &:hover{
+                border-color: $blue20-dark;
+            }
+        }
+        &.videoArticle .article--readmore{
+            border-color: $peach-40;
+            &:hover{
+                border-color: $peach40-dark;
+            }
+        }
+    }
+    .articlePagination a.button{
+        &:first-child{
+            margin-bottom: 0;
+        }
+        > div{
+            display: flex;
+            align-items: center;
+        }
+    }
+}

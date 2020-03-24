@@ -1,0 +1,287 @@
+body,html {
+	font-family: $base-font;
+	font-size: 19px;
+}
+/* Headings
+========================================================================== */
+
+.bodyFamily{
+	font-family: $base-font;
+}
+
+.headingFamily{
+	font-family: $heading;
+}
+
+p{
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-14{
+	@include fontsize(14px);
+	@include lineheight(14px, 17px);
+}
+
+.text-16{
+	@include fontsize(16px);
+	@include lineheight(16px, 20px);
+}
+
+.text-18{
+	@include fontsize(18px);
+	@include lineheight(18px, 24px);
+}
+
+.text-20{
+	@include fontsize(20px);
+	@include lineheight(20px, 28px);
+	@media (max-width: 768px){
+		@include fontsize(18px);
+		@include lineheight(18px, 24px);
+	}
+}
+
+.text-21{
+	@include fontsize(21px);
+	@include lineheight(21px, 26px);
+	@media (max-width: 768px){
+		@include fontsize(18px);
+		@include lineheight(18px, 26px);
+	}
+}
+
+.text-24{
+	@include fontsize(24px);
+	@include lineheight(24px, 27px);
+}
+
+.text-25{
+	@include fontsize(25px);
+	@include lineheight(25px, 27px);
+	@media (max-width: 768px){
+		@include fontsize(18px);
+		@include lineheight(18px, 24px);
+	}
+}
+
+.text-28{
+	@include fontsize(28px);
+	@include lineheight(28px, 32px);
+	@media (max-width: 768px){
+		@include fontsize(21px);
+		@include lineheight(21px, 28px);
+	}
+}
+
+
+.text-38{
+	@include fontsize(38px);
+	@include lineheight(38px, 44px);
+	@media (max-width: 768px){
+		@include fontsize(28px);
+		@include lineheight(28px, 32px);
+	}
+}
+
+.text-43{
+	@include fontsize(43px);
+	@include lineheight(43px, 48px);
+	@media (max-width: 768px){
+		@include fontsize(38px);
+		@include lineheight(38px, 44px);
+	}
+}
+
+
+.text-57{
+	@include fontsize(57px);
+	@include lineheight(57px, 64px);
+}
+
+.text-67{
+	@include fontsize(67px);
+	@include lineheight(67px, 74px);
+	@media (max-width: 768px){
+		@include fontsize(43px);
+		@include lineheight(43px, 48px);
+	}
+}
+
+
+
+/* Links
+========================================================================== */
+a {
+	background: transparent;
+	color: $link;
+	transition: all .15s;
+}
+a:active, a:hover {
+	outline: 0;
+}
+a:hover {
+	color: $link--hover;
+}
+a:visited {
+	color: $link--visited;
+}
+a:visited:hover {
+	color: rgba($link--visited, 80);
+}
+a:active {
+	color: $link--active;
+}
+
+a:hover,a:active,a:focus,a:visited {
+	text-decoration: underline
+}
+
+.text-center{
+	text-align: center !important;
+}
+
+.text-left{
+	text-align: left !important;
+}
+
+.text-right{
+	text-align: right !important;
+}
+
+.jumbotron{
+	@include fontsize(67px);
+	@include lineheight(67px, 72px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $navy-20;
+}
+
+h1{
+	@include fontsize(58px);
+	@include lineheight(58px, 56px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $navy-40;
+	@media screen and (max-width: 991px){
+		@include fontsize(50px);
+		@include lineheight(50px, 54px);
+	}
+	@media screen and (max-width: 767px){
+		@include fontsize(38px);
+		@include lineheight(38px, 40px);
+	}
+}
+
+h2{
+	@include fontsize(50px);
+	@include lineheight(50px, 54px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $white;
+}
+
+h3{
+	@include fontsize(44px);
+	@include lineheight(44px, 48px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $grey-100;
+}
+
+h4{
+	@include fontsize(38px);
+	@include lineheight(38px, 46px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $navy-60;
+}
+
+h5{
+	@include fontsize(28px);
+	@include lineheight(28px, 34px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $grey-100;
+}
+
+h6{
+	@include fontsize(25px);
+	@include lineheight(25px, 32px);
+	@extend .headingFamily;
+	font-weight: bold;
+	color: $grey-100;
+}
+
+.italicQuote{
+	@include fontsize(21px);
+	@include lineheight(21px, 30px);
+	font-weight: normal;
+	color: $navy-20;
+	font-family: DraftC-Ita;
+	@media screen and (max-width: 575px){
+		@include fontsize(19px);
+		@include lineheight(19px, 30px);
+	}
+}
+
+.allCaps-Bold{
+	@include fontsize(19px);
+	@include lineheight(19px, 20px);
+	font-weight: bold;
+	letter-spacing: 0.19px;
+	color: $navy-10;
+	font-family: DraftC-Bold;
+}
+
+.paragraphNormal{
+	@include fontsize(19px);
+	@include lineheight(19px, 27px);
+	font-weight: normal;
+	letter-spacing: 0.19px;
+	color: $metallic-blue;
+	@media screen and (max-width: 767px){
+		@include fontsize(16px);
+		@include lineheight(16px, 22px);
+		letter-spacing: 0.08px;
+	}
+}
+
+.paragraphDark{
+	@include fontsize(19px);
+	@include lineheight(19px, 27px);
+	font-weight: normal;
+	letter-spacing: 0.19px;
+	color: $grey-100;
+	@media screen and (max-width: 767px){
+		@include fontsize(16px);
+		@include lineheight(16px, 22px);
+		letter-spacing: 0.08px;
+	}
+}
+
+.buttonTextWhite{
+	@include fontsize(16px);
+	@include lineheight(16px, 64px);
+	font-weight: bold;
+	letter-spacing: 0.88px;
+	color: $grey-10;
+	font-family: DraftC;
+}
+
+.allCaps-White{
+	@include fontsize(14px);
+	@include lineheight(14px, 17px);
+	font-weight: normal;
+	letter-spacing: 1.12px;
+	color: $grey-10;
+}
+
+.smallText{
+	@include fontsize(14px);
+	@include lineheight(14px, 19px);
+	font-weight: normal;
+	letter-spacing: 0.07px;
+	color: $grey-40;
+}

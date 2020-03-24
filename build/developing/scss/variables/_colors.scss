@@ -1,0 +1,109 @@
+// A beautiful selection of our branded colors
+//
+// Styleguide
+
+// primary colors
+$primary:       #105ba3 !default;
+$primary-dark:  darken($primary, 10%) !default;
+
+.color-primary{
+   color: $primary;
+}
+
+.bg-primary{
+   background-color: $primary;
+}
+
+$grey-20: #ebf0f8 !default;
+$navy-40: #233e57 !default;
+$turquoise-30: #7cf0c6 !default;
+$peach-20: #fee7bf !default;
+$turquoise-20: #bdffe7 !default;
+$peach-10: #fffbf3 !default;
+$navy-00: #144f80 !default;
+$turquoise-10: #d6fff0 !default;
+$navy-10: #244e73 !default;
+$grey-00: #f2f4f7 !default;
+$grey-40: #97a3ac !default;
+$grey-10: #f0f3f7 !default;
+$peach-40: #f7d194 !default;
+$grey-90: #576673 !default;
+$navy-20: #1a4566 !default;
+$grey-100: #3b5061 !default;
+$pale-grey-three: #e8eef2 !default;
+$metallic-blue: #486b86 !default;
+$blue-20: #3a88d3 !default;
+$blue-00: #d3f1ff !default;
+$peach-30: #ffe2b3 !default;
+$navy-60: #1f394d !default;
+$navy-50: #213b52 !default;
+$navy-70: #153046 !default;
+$grey-50: #637583 !default;
+$navy-30: #1f415d !default;
+$brown: #5e533f !default;
+$orange: #ffa200 !default;
+$torquoise-00: #ddf5f3 !default;
+$turquoise-40: #53daa9 !default;
+$blue-10: #a2d1f8 !default;
+
+$peach40-dark:  darken($peach-40, 10%) !default;
+$blue20-dark:  darken($blue-20, 10%) !default;
+$navy40-dark:  darken($navy-40, 10%) !default;
+
+
+$link:          #4076D4 !default;
+$link--visited: #9140D4 !default;
+$link--hover:   darken($link, 5%) !default;
+$link--active:  #1c86f2 !default;
+
+
+// light shades
+$color-lightshade1:         #cdcdce !default;
+$color-lightshade2:         #dededf !default;
+$color-lightshade3:         #efeff0 !default;
+$color-lightshade4:         #f9f9f9 !default;
+$color-lightshade5:         #fbfbfb !default;
+
+// extras
+$color-highlight: #e8f1fd !default;
+$white: #fff;
+
+.color-white{
+   color: $white;
+}
+
+
+// Grayscale
+$color-black: #333 !default;
+$black: $color-black;
+$color-text: $color-black;
+$color-heading: #005757;
+
+$color-darkgray: #505050 !default;
+$color-midgray: #676b72 !default;
+$color-gray: #bdbdbd !default;
+$color-lightgray: #d4d4d4 !default;
+$color-silver: #e0e1e1 !default;
+$color-aluminum: #f8f8f8 !default;
+
+
+// States
+$color-error: #e00e0e !default;
+$color-success: #4dbd6f !default;
+$color-warning: #f7ba45 !default;
+$color-focus: #1c86f2 !default;
+
+.color-green{
+   color: #005757
+}
+
+.bg-green{
+   background-color: #005757
+}
+
+.color-black{
+   color: $black
+}
+.color-white{
+   color: $white
+}

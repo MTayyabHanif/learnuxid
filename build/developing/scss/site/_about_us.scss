@@ -1,0 +1,60 @@
+.aboutUs{
+    background-color: $peach-10;
+    padding: 90px 0;
+    @media screen and (max-width: 991px) {
+        padding: 70px 0;
+    }
+    > .container > .row > div > .row > div:first-child {
+        @media screen and (max-width: 991px){
+            order: 2;
+        }
+    }
+    .aboutUs--title {
+        margin-bottom: 91px;
+    }
+    .aboutUs--description{
+        @media screen and (max-width: 991px){
+            max-width: 592px;
+            margin: 0 auto;
+        }
+    }
+    .aboutUs--description p:not(:last-child) {
+        margin-bottom: 11px;
+        span.bold{
+            font-family: DraftC-Bold;
+        }
+        i{
+            font-family: DraftD-RegularIta;
+        }
+    }
+    .quote{
+        @media screen and (max-width: 991px){
+            max-width: 455px;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 550px){
+            margin-left: 15px;
+        }
+        .signature {
+            position: absolute;
+            right: -39px;
+            bottom: -28px;
+            @media screen and (max-width: 575px){
+                right: 0;
+                bottom: -35px;
+            }
+        }
+    }
+    .aboutUs--img,
+    .aboutUs--title {
+        @media screen and (max-width: 991px){
+            margin-bottom: 46px;
+        }
+    }
+    .aboutUs--img{
+        @media screen and (max-width: 991px){
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    }
+}
