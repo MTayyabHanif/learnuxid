@@ -29,8 +29,8 @@
             content: '';
             background: linear-gradient(to right, transparent 95%, $white 100%);
             width: 100%;
-            margin-left:-5%; /* same as width to create the overlap*/
-            flex-shrink:0; /* to disable shrink effect */
+            margin-left:-5%;
+            flex-shrink:0;
             position: sticky;
             right: 0;
         }                                 
