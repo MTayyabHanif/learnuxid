@@ -8932,7 +8932,7 @@ footer .smallText a:hover {
   content: '';
   background: linear-gradient(to right, transparent 95%, #fff 100%);
   width: 100%;
-  margin-left: -5%;
+  margin-left: -104%;
   flex-shrink: 0;
   position: sticky;
   right: 0;
