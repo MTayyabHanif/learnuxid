@@ -8893,6 +8893,26 @@ footer .smallText a:hover {
 /*****************
  * Courses Section
 ******************/
+.coursesSection .coursesSection-wrap {
+  position: relative;
+}
+
+.coursesSection .coursesSection-wrap::after {
+  content: '';
+  background: linear-gradient(to right, transparent 10%, #fff 80%);
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .coursesSection .coursesSection-wrap::after {
+    width: 70px;
+  }
+}
+
 .coursesSection .coursesSection--slider {
   display: flex;
   overflow: auto;
@@ -8928,16 +8948,6 @@ footer .smallText a:hover {
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.coursesSection .coursesSection--slider.scrollableCourses::after {
-  content: '';
-  background: linear-gradient(to right, transparent 95%, #fff 100%);
-  width: 100%;
-  margin-left: -102%;
-  flex-shrink: 0;
-  position: sticky;
-  right: 0;
-}
-
 .coursesSection .coursesSection--slider .courseCard {
   flex: 0 0 auto;
   margin-right: 64px;
@@ -8946,6 +8956,16 @@ footer .smallText a:hover {
 @media screen and (max-width: 450px) {
   .coursesSection .coursesSection--slider .courseCard {
     flex: 0 0 100%;
+  }
+}
+
+.coursesSection .coursesSection--slider .courseCard:last-child {
+  padding-right: 120px;
+}
+
+@media screen and (max-width: 550px) {
+  .coursesSection .coursesSection--slider .courseCard:last-child {
+    padding-right: 80px;
   }
 }
 
