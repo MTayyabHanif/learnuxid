@@ -1,22 +1,4 @@
-if($('.feedbackSection-slider').length > 0){
-    $('.feedbackSection-slider').slick({
-        slidesPerRow: 2,
-        rows: 2,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: $('.feedbackSection-sliderControls .prevArrow'),
-        nextArrow: $('.feedbackSection-sliderControls .nextArrow'),
-        responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesPerRow: 1,
-                rows: 2,
-            }
-        }
-        ]
-    });
-}
+
 function coursesSlide(){
 
     const slider = $(".coursesSection--slider");
