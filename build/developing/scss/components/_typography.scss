@@ -156,6 +156,14 @@ a:hover,a:active,a:focus,a:visited {
 	@extend .headingFamily;
 	font-weight: bold;
 	color: $navy-20;
+	@media screen and (max-width: 991px){
+		@include fontsize(54px);
+		@include lineheight(54px, 44px);
+	}
+	@media screen and (max-width: 767px){
+		@include fontsize(42px);
+		@include lineheight(42px, 40px);
+	}
 }
 
 h1{
@@ -223,6 +231,10 @@ h6{
 	@media screen and (max-width: 575px){
 		@include fontsize(19px);
 		@include lineheight(19px, 30px);
+	}
+	@media screen and (max-width: 375px){
+		@include fontsize(17px);
+		@include lineheight(17px, 30px);
 	}
 }
 

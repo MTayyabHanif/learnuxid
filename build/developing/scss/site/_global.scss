@@ -24,6 +24,21 @@ section.sectionTopbar{
     margin-top: -40px;
     position: relative;
     z-index: 1;
+    @media screen and (max-width: 991px){
+        margin-top: -26px;
+    }
+    @media screen and (max-width: 767px){
+        margin-top: -24px;
+    }
+    > .container {
+        padding: 0 34px;
+        @media screen and (max-width: 991px){
+            padding: 0 25px;
+        }
+        @media screen and (max-width: 450px){
+            padding: 0 15px;
+        }
+    }
     img {
         border-radius: 4px;
         box-shadow: 0 12px 27px 0 rgba(0, 0, 0, 0.2);
@@ -35,10 +50,12 @@ section.sectionTopbar{
     padding: 20px;
 }
 
-body.page-template-blog section.newsletter,
 body.page-template-courses section.newsletter,
 body.page-template-article section.newsletter{
     margin-top: 115px;
+}
+body.page-template-blog section.newsletter{
+    margin-top: 80px;
 }
 
 .videoWrapper {

@@ -5,9 +5,12 @@
     @media screen and (max-width: 991px) {
         height: 1030px;
     }
-    // @media screen and (max-width: 575px) {
-    //     height: 917.8px;
-    // }
+    > .container {
+        @media screen and (max-width: 767px) {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
     .chooseUs-wrap{
         padding: 66px 0 0 0;
     }

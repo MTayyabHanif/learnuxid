@@ -1,5 +1,8 @@
 .featuresSection{
 	margin: 103px 0;
+	@media screen and (max-width: 375px){
+		margin: 70px 0;
+	}
 	p.featuresSection--description {
 		max-width: 486px;
 		color: $grey-90;
@@ -7,10 +10,7 @@
 	.featuresSection--logos{
 		> div{
 			column-count: 5;
-			@media screen and (max-width: 767px){
-				column-count: 3;
-			}
-			@media screen and (max-width: 575px){
+			@media screen and (max-width: 768px){
 				column-count: 2;
 			}
 		}

@@ -1,7 +1,13 @@
 .feedbackSection{
     margin: 103px 0;
+    @media screen and (max-width: 375px) {
+        margin: 70px 0;
+    }
     .sectionTitle{
         margin-bottom: 73px;
+        @media screen and (max-width: 375px) {
+            margin-bottom: 30px;
+        }
     }
     .studentFeedback{
         vertical-align: top;
@@ -11,6 +17,9 @@
             max-width: 515px;
             margin-left: 0;
             min-height: 134px;
+            @media screen and (max-width: 375px) {
+                min-height: auto;
+            }
             &::before {
                 content: '';
                 background-image: url('../img/svg/quote-green.svg');
@@ -30,13 +39,17 @@
     }
     .studentFeedback .studentFeedback--studentDetails{
         align-items: center;
+        > .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
         .studentFeedback--details{
             margin-left: 15px;
         }
         .studentFeedback--name,
         .studentFeedback--profession{
-            @include fontsize(21px);
-            @include lineheight(21px, 22px);
+            @include fontsize(18px);
+            @include lineheight(18px, 22px);
             color: $grey-90;
         }
         .studentFeedback--name{
@@ -44,8 +57,12 @@
         }
         .studentFeedback-avatar img {
             max-width: 81px;
+            width: 100%;
             border-radius: 50%;
             border: 2px solid #d0d8e4;
+            @media screen and (max-width: 375px) {
+                max-width: 70px;
+            }
         }
     }
     .feedbackSection-sliderControls {
@@ -55,6 +72,9 @@
         max-width: 350px;
         width: 100%;
         margin: 0 auto;
+        @media screen and (max-width: 375px) {
+            margin-top: -70px;
+        }
         svg path{
             fill: $metallic-blue;
         }
