@@ -31,34 +31,22 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @font-face {
   font-family: DraftC-Bold;
-  src: local(DraftC-Bold), url(./../../fonts/DraftC-Bold.otf) format("opentype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(./../../fonts/DraftC-Bold.otf);
 }
 
 @font-face {
   font-family: DraftC;
-  src: local(DraftC-Regular), url(./../../fonts/DraftC-Regular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(./../../fonts/DraftC-Regular.otf);
 }
 
 @font-face {
   font-family: DraftC-Ita;
-  src: local(DraftC-RegularIta), url(./../../fonts/DraftC-RegularIta.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(./../../fonts/DraftC-RegularIta.otf);
 }
 
 @font-face {
   font-family: DraftD;
-  src: local(DraftD-Regular), url(./../../fonts/DraftD-Regular.otf) format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+  src: url(./../../fonts/DraftD-Regular.otf);
 }
 
 /**
@@ -9708,10 +9696,15 @@ form.contactForm button {
   color: #637583;
   position: absolute;
   top: 8px;
-  left: 12px;
+  left: 13px;
   -webkit-transform: translateY(12px);
   transform: translateY(12px);
   transition: 0.2s;
+}
+
+.form-item input ~ label,
+.form-item textarea ~ label {
+  font-weight: bold;
 }
 
 .form-item input:focus ~ label,
@@ -9719,6 +9712,7 @@ form.contactForm button {
   top: 0;
   font-size: 14px;
   transition: 0.2s;
+  color: #105ba3;
 }
 
 .form-item .form-msg {

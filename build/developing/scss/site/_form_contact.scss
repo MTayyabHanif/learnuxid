@@ -38,16 +38,21 @@ form.contactForm{
         color: $grey-50;
         position: absolute;
         top: 8px;
-        left: 12px;
+        left: 13px;
         -webkit-transform: translateY(12px);
         transform: translateY(12px);
         transition: 0.2s;
+    }
+    input~label,
+    textarea~label{
+        font-weight: bold;
     }
     input:focus~label,
     textarea:focus~label{
         top: 0;
         font-size: 14px;
         transition: 0.2s;
+        color: $primary;
     }
     .form-msg{
         color: red;
