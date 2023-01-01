@@ -22,8 +22,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "rtlcss": "^2.5.0",
-    "webpack": "^4.41.6",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
